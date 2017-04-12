@@ -11,7 +11,7 @@ Drawer.propTypes = {
 }
 export default function Drawer (props) {
   return (
-    <View>
+    <View style={styles.container}>
       <DrawerHeader />
       <DrawerTab
         title='Home'
@@ -33,4 +33,7 @@ export default function Drawer (props) {
   )
 }
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  }
 })
